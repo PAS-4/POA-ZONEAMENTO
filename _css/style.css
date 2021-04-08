@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    width: 100%;
+    padding: 0 0 10px 0;
+    font-size: 20pt;
+    background-color: #fff;
+}
+
+section{
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 30vw;
+    height: 100vh;
+    box-shadow: 0px 0px 5px #000;
+    background: url("../_image/mapa_tabela_zonaRural/mapaCompletoSmall.jpg") no-repeat;
+    background-position: 50% 95%;
+}
+
+select{
+    margin: 0 0 10px 0;
+    font-weight: bolder;
+    font-size: 15pt;
+}
+
+#consulta{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 15pt;
+    border: solid 3px #999;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#consulta:hover{
+    background-color: #eee;
+    transition: all .2s;
+}
+
+#erro{
+    display: none;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: orange;
+}
+
+#mapa{
+    display: none;
+    position: relative;
+    margin: auto;
+    width: 380px;
+    height: 390px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+aside{
+    position: relative;
+    float: right;
+    width: 69.9vw;
+    height: 100vh;
+    overflow: auto;
+    text-align: justify;
+}
+
+aside h1{
+    text-align: center;
+    width: auto;
+    margin: 3px;
+    padding: 50px;
+    font-size: 30pt;
+}
+
+aside hr{
+    margin: 20px 50px;
+    color: #000;
+}
+
+aside p{
+    font-weight: bolder;
+    margin: 15px 50px;
+    font-size: 15pt;
+}
+
+aside .result{
+    font-size: 20pt;
+    text-decoration: underline;
+}
