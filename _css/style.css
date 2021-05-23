@@ -99,3 +99,52 @@ aside .result{
     font-size: 20pt;
     text-decoration: underline;
 }
+
+/*RESPONSIVE*/
+
+@media(max-width: 720px){
+    h1, select, #consulta{
+        margin: 15px;
+        font-size: 30pt;
+    }
+
+    section{
+        position: relative;
+        width: auto;
+        height: 80vh;
+        background-size: 50%;
+    }
+
+    section img{
+        width: 80vw;
+    }
+
+    #erro{
+        font-size: 50px;
+    }
+
+    #mapa{
+        width: 630px;
+        height: 630px;
+    }
+
+    aside{
+        float: none;
+        width: 100vw;
+        height: auto;
+    }
+
+    aside h1{
+        font-size: 50pt;
+    }
+
+    aside p{
+        font-size: 25pt;
+        margin-bottom: 50px;
+    }
+
+    aside .result{
+        font-size: 30pt;
+        text-decoration: none;
+    }
+}
