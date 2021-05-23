@@ -56,7 +56,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.23.jpg"
+                mapa.src = "image/43211/43211.xx/43211.23.jpg"
                 break
             case '24':
                 switch(quadra.value){
@@ -76,7 +76,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.24.jpg"
+                mapa.src = "image/43211/43211.xx/43211.24.jpg"
                 break
             case '33':
                 switch(quadra.value){
@@ -91,7 +91,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.33.jpg"
+                mapa.src = "image/43211/43211.xx/43211.33.jpg"
                 break
             case '34':
                 switch(quadra.value){
@@ -109,7 +109,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.34.jpg"
+                mapa.src = "image/43211/43211.xx/43211.34.jpg"
                 break
             case '42':
                 switch(quadra.value){
@@ -124,7 +124,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.42.jpg"
+                mapa.src = "image/43211/43211.xx/43211.42.jpg"
                 break
             case '44':
                 switch(quadra.value){
@@ -141,7 +141,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.44.jpg"
+                mapa.src = "image/43211/43211.xx/43211.44.jpg"
                 break
             case '51':
                 switch(quadra.value){
@@ -175,7 +175,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.51.jpg"
+                mapa.src = "image/43211/43211.xx/43211.51.jpg"
                 break
             case '52':
                 switch(quadra.value){
@@ -206,7 +206,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.52.jpg"
+                mapa.src = "image/43211/43211.xx/43211.52.jpg"
                 break
             case '53':
                 switch(quadra.value){
@@ -235,7 +235,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.53.jpg"
+                mapa.src = "image/43211/43211.xx/43211.53.jpg"
                 break
             case '54':
                 switch(quadra.value){
@@ -262,7 +262,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.54.jpg"
+                mapa.src = "image/43211/43211.xx/43211.54.jpg"
                 break
             case '61':
                 switch(quadra.value){
@@ -291,7 +291,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.61.jpg"
+                mapa.src = "image/43211/43211.xx/43211.61.jpg"
                 break
             case '62':
                 switch(quadra.value){
@@ -316,7 +316,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.62.jpg"
+                mapa.src = "image/43211/43211.xx/43211.62.jpg"
                 break
             case '63':
                 switch(quadra.value){
@@ -341,7 +341,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.63.jpg"
+                mapa.src = "image/43211/43211.xx/43211.63.jpg"
                 break
             case '64':
                 switch(quadra.value){
@@ -365,7 +365,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43211/43211.xx/43211.64.jpg"
+                mapa.src = "image/43211/43211.xx/43211.64.jpg"
                 break
             default:
                 msgErro()
@@ -385,7 +385,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.13.jpg"
+                mapa.src = "image/43212/43212.xx/43212.13.jpg"
                 break
             case '14':
                 switch(quadra.value){
@@ -415,7 +415,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.14.jpg"
+                mapa.src = "image/43212/43212.xx/43212.14.jpg"
                 break
             case '23':
                 switch(quadra.value){
@@ -430,11 +430,11 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.23.jpg"
+                mapa.src = "image/43212/43212.xx/43212.23.jpg"
                 break
             case '24':
                 zeia1()
-                mapa.src = "./_image/43212/43212.xx/43212.24.jpg"
+                mapa.src = "image/43212/43212.xx/43212.24.jpg"
                 break
             case '41':
                 switch(quadra.value){
@@ -466,7 +466,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.41.jpg"
+                mapa.src = "image/43212/43212.xx/43212.41.jpg"
                 break
             case '42':
                 switch(quadra.value){
@@ -497,7 +497,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.42.jpg"
+                mapa.src = "image/43212/43212.xx/43212.42.jpg"
                 break
             case '43':
                 switch(quadra.value){
@@ -534,7 +534,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.43.jpg"
+                mapa.src = "image/43212/43212.xx/43212.43.jpg"
                 break
             case '44':
                 switch(quadra.value){
@@ -562,7 +562,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.44.jpg"
+                mapa.src = "image/43212/43212.xx/43212.44.jpg"
                 break
             case '51':
                 switch(quadra.value){
@@ -575,11 +575,11 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.51.jpg"
+                mapa.src = "image/43212/43212.xx/43212.51.jpg"
                 break
             case '52':
                 zeia4()
-                mapa.src = "./_image/43212/43212.xx/43212.52.jpg"
+                mapa.src = "image/43212/43212.xx/43212.52.jpg"
                 break
             case '53':
                 switch(quadra.value){
@@ -591,11 +591,11 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43212/43212.xx/43212.53.jpg"
+                mapa.src = "image/43212/43212.xx/43212.53.jpg"
                 break
             case '54':
                 zeia4()
-                mapa.src = "./_image/43212/43212.xx/43212.54.jpg"
+                mapa.src = "image/43212/43212.xx/43212.54.jpg"
                 break
             default:
                 msgErro()
@@ -618,7 +618,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.12.jpg"
+                mapa.src = "image/43213/43213.xx/43213.12.jpg"
                 break
             case '14':
                 switch(quadra.value){
@@ -630,7 +630,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.14.jpg"
+                mapa.src = "image/43213/43213.xx/43213.14.jpg"
                 break
             case '21':
                 switch(quadra.value){
@@ -653,7 +653,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.21.jpg"
+                mapa.src = "image/43213/43213.xx/43213.21.jpg"
                 break
             case '22':
                 switch(quadra.value){
@@ -669,7 +669,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.22.jpg"
+                mapa.src = "image/43213/43213.xx/43213.22.jpg"
                 break
             case '23':
                 switch(quadra.value){
@@ -688,7 +688,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.23.jpg"
+                mapa.src = "image/43213/43213.xx/43213.23.jpg"
                 break
             case '24':
                 switch(quadra.value){
@@ -704,7 +704,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.24.jpg"
+                mapa.src = "image/43213/43213.xx/43213.24.jpg"
                 break
             case '31':
                 switch(quadra.value){
@@ -732,7 +732,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.31.jpg"
+                mapa.src = "image/43213/43213.xx/43213.31.jpg"
                 break
             case '32':
                 switch(quadra.value){
@@ -762,7 +762,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.32.jpg"
+                mapa.src = "image/43213/43213.xx/43213.32.jpg"
                 break
             case '33':
                 switch(quadra.value){
@@ -787,7 +787,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.33.jpg"
+                mapa.src = "image/43213/43213.xx/43213.33.jpg"
                 break
             case '34':
                 switch(quadra.value){
@@ -813,7 +813,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.34.jpg"
+                mapa.src = "image/43213/43213.xx/43213.34.jpg"
                 break
             case '52':
                 switch(quadra.value){
@@ -829,7 +829,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.52.jpg"
+                mapa.src = "image/43213/43213.xx/43213.52.jpg"
                 break
             case '61':
                 switch(quadra.value){
@@ -864,7 +864,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.61.jpg"
+                mapa.src = "image/43213/43213.xx/43213.61.jpg"
                 break
             case '62':
                 switch(quadra.value){
@@ -892,7 +892,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.62.jpg"
+                mapa.src = "image/43213/43213.xx/43213.62.jpg"
                 break
             case '63':
                 switch(quadra.value){
@@ -917,7 +917,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43213/43213.xx/43213.63.jpg"
+                mapa.src = "image/43213/43213.xx/43213.63.jpg"
                 break
             case '64':
                 switch(quadra.value){
@@ -931,10 +931,10 @@ function consultar(){
                     case '84':
                     case '89':
                     case '92':
-                        mapa.src = "./_image/43213/43213.xx/43213.64.jpg"
+                        mapa.src = "image/43213/43213.xx/43213.64.jpg"
                         break
                     case '80':
-                        mapa.src = "./_image/43213/43213.xx/43213.64.80.jpg"
+                        mapa.src = "image/43213/43213.xx/43213.64.80.jpg"
                         break
                     default:
                         msgErro()
@@ -980,7 +980,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.11.jpg"
+                mapa.src = "image/43214/43214.xx/43214.11.jpg"
                 break
             case '12':
                 switch(quadra.value){
@@ -1004,7 +1004,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.12.jpg"
+                mapa.src = "image/43214/43214.xx/43214.12.jpg"
                 break
             case '13':
                 switch(quadra.value){
@@ -1029,7 +1029,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.13.jpg"
+                mapa.src = "image/43214/43214.xx/43214.13.jpg"
                 break
             case '14':
                 switch(quadra.value){
@@ -1065,7 +1065,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.14.jpg"
+                mapa.src = "image/43214/43214.xx/43214.14.jpg"
                 break
             case '21':
                 switch(quadra.value){
@@ -1076,11 +1076,11 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.21.jpg"
+                mapa.src = "image/43214/43214.xx/43214.21.jpg"
                 break
             case '22':
                 zeia1()
-                mapa.src = "./_image/43214/43214.xx/43214.22.jpg"
+                mapa.src = "image/43214/43214.xx/43214.22.jpg"
                 break
             case '23':
                 switch(quadra.value){
@@ -1092,7 +1092,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.23.jpg"
+                mapa.src = "image/43214/43214.xx/43214.23.jpg"
                 break
             case '41':
                 switch(quadra.value){
@@ -1112,7 +1112,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.41.jpg"
+                mapa.src = "image/43214/43214.xx/43214.41.jpg"
                 break
             case '42':
                 switch(quadra.value){
@@ -1148,7 +1148,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.42.jpg"
+                mapa.src = "image/43214/43214.xx/43214.42.jpg"
                 break
             case '43':
                 switch(quadra.value){
@@ -1163,7 +1163,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.43.jpg"
+                mapa.src = "image/43214/43214.xx/43214.43.jpg"
                 break
             case '44':
                 switch(quadra.value){
@@ -1173,7 +1173,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.44.jpg"
+                mapa.src = "image/43214/43214.xx/43214.44.jpg"
                 break
             case '51':
                 switch(quadra.value){
@@ -1188,11 +1188,11 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43214/43214.xx/43214.51.jpg"
+                mapa.src = "image/43214/43214.xx/43214.51.jpg"
                 break
             case '53':
                 zeii_IIIb()
-                mapa.src = "./_image/43214/43214.xx/43214.53.jpg"
+                mapa.src = "image/43214/43214.xx/43214.53.jpg"
                 break
             default:
                 msgErro()
@@ -1204,11 +1204,11 @@ function consultar(){
                     case '83':
                     case '90':
                     case '92':
-                        mapa.src = "./_image/43231/43231.xx/43231.22.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.22.jpg"
                         break
                     case '02':
                     case '94':
-                        mapa.src = "./_image/43231/43231.xx/43231.22-02ou94.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.22-02ou94.jpg"
                         break
                     default:
                         msgErro()
@@ -1227,7 +1227,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43231/43231.xx/43231.24.jpg"
+                mapa.src = "image/43231/43231.xx/43231.24.jpg"
                 break
             case '31':
                 switch(quadra.value){
@@ -1248,7 +1248,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43231/43231.xx/43231.31.jpg"
+                mapa.src = "image/43231/43231.xx/43231.31.jpg"
                 break
             case '32':
                 switch(quadra.value){
@@ -1265,7 +1265,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43231/43231.xx/43231.32.jpg"
+                mapa.src = "image/43231/43231.xx/43231.32.jpg"
                 break
             case '33':
                 switch(quadra.value){
@@ -1295,7 +1295,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43231/43231.xx/43231.33.jpg"
+                mapa.src = "image/43231/43231.xx/43231.33.jpg"
                 break
             case '34':
                 switch(quadra.value){
@@ -1320,7 +1320,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43231/43231.xx/43231.34.jpg"
+                mapa.src = "image/43231/43231.xx/43231.34.jpg"
                 break
             case '52':
                 switch(quadra.value){
@@ -1329,11 +1329,11 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43231/43231.xx/43231.52.jpg"
+                mapa.src = "image/43231/43231.xx/43231.52.jpg"
                 break
             case '54':
                 zeia3()
-                mapa.src = "./_image/43231/43231.xx/43231.54.jpg"
+                mapa.src = "image/43231/43231.xx/43231.54.jpg"
                 break
             case '61':
                 switch(quadra.value){
@@ -1344,15 +1344,15 @@ function consultar(){
                     case '71':
                     case '82':
                     case '94':
-                        mapa.src = "./_image/43231/43231.xx/43231.61.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.61.jpg"
                         break
                     case '50':
                     case '97':
-                        mapa.src = "./_image/43231/43231.xx/43231.61.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.61.jpg"
                         zeis3()
                         break
                     case '91':
-                        mapa.src = "./_image/43231/43231.xx/43231.61.91.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.61.91.jpg"
                     default:
                         msgErro()
                 }
@@ -1382,10 +1382,10 @@ function consultar(){
                     case '86':
                     case '93':
                     case '96':
-                        mapa.src = "./_image/43231/43231.xx/43231.62.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.62.jpg"
                         break
                     case '19':
-                        mapa.src = "./_image/43231/43231.xx/43231.62.19.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.62.19.jpg"
                         break
                     default:
                         msgErro()
@@ -1393,7 +1393,7 @@ function consultar(){
                 break
             case '63':
                 zeia3()
-                mapa.src = "./_image/43231/43231.xx/43231.63.jpg"
+                mapa.src = "image/43231/43231.xx/43231.63.jpg"
                 break
             case '64':
                 switch(quadra.value){
@@ -1401,14 +1401,14 @@ function consultar(){
                     case '48':
                     case '69':
                     case '79':
-                        mapa.src = "./_image/43231/43231.xx/43231.64.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.64.jpg"
                         break
                     case '19':
-                        mapa.src = "./_image/43231/43231.xx/43231.62e64.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.62e64.jpg"
                         break
                     case '27':
                     case '66':
-                        mapa.src = "./_image/43231/43231.xx/43231.64.jpg"
+                        mapa.src = "image/43231/43231.xx/43231.64.jpg"
                         zeia3()
                         break
                     default:
@@ -1442,10 +1442,10 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43232/43232.xx/43232.11.jpg"
+                mapa.src = "image/43232/43232.xx/43232.11.jpg"
                 break
             case '12':
-                mapa.src = "./_image/43232/43232.xx/43232.12.jpg"
+                mapa.src = "image/43232/43232.xx/43232.12.jpg"
                 break
             case '13':
                 switch(quadra.value){
@@ -1463,7 +1463,7 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43232/43232.xx/43232.13.jpg"
+                mapa.src = "image/43232/43232.xx/43232.13.jpg"
                 break
             case '41':
                 switch(quadra.value){
@@ -1485,11 +1485,11 @@ function consultar(){
                     default:
                         msgErro()
                 }
-                mapa.src = "./_image/43232/43232.xx/43232.41.jpg"
+                mapa.src = "image/43232/43232.xx/43232.41.jpg"
                 break
             case '43':
                 zeia1()
-                mapa.src = "./_image/43232/43232.xx/43232.43.jpg"
+                mapa.src = "image/43232/43232.xx/43232.43.jpg"
                 break
             default:
                 msgErro()
