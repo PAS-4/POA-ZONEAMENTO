@@ -1507,7 +1507,7 @@ function muc(){
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">6</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido Residência, Comercio e Indústria de pequeno porte não poluente, desde que sejam respeitadas as normas de âmbito Federal, Estadual e Municipal.</span>`
+    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.</span>`
 }//MUC
 
 //ZEIA
@@ -1536,7 +1536,7 @@ function zeia2(){
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">0,7</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">1</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">20%</span>`
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido... (Ver com a Val ou tirar foto de uma certidão).</span>`
+    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Verificar questão das Zonas com a Val!<!--Permitido residência unifamiliar ou multifamiliar, comércio de uso frequente, comércio de serviço e comércio especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.--></span>`
 }
 
 function zeia3(){
@@ -1548,19 +1548,19 @@ function zeia3(){
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">2</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">20%</span>`
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido... (Ver com a Val ou tirar foto de uma certidão).</span>`
+    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido residência unifamiliar e comércio de uso frequente e de serviço, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.</span>`
 }
 
 function zeia4(){
     zoneamento.style.backgroundColor = '#bfff00'
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE AMBIENTAL 4'
     descrZeia()
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Área de Proteção Ambiental da Várzea do Rio Tietê (APA), Área de Proteção aos Mananciais (APM) e demais áreas protegidas por legislações Estaduais e Federais.</span>`
+    desd.innerHTML = `Desdobro mínimo permitido: <span class = "result">500m²</span>`
+    tOcup.innerHTML = `Taxa de Ocupação: <span class = "result">70%</span>`
+    caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
+    caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">2</span>`
+    tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
+    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Área de Proteção Ambiental da Várzea do Rio Tietê (APA), Área de Proteção aos Mananciais (APM) e demais áreas protegidas por legislações Estaduais e Federais.<!-- Permitido indústrias(1) em geral e corredor comercial (CC - Onde é permitido comercio em geral, exceto ZEIA 1), desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.--></span>`
 }//ZEIA
 
 //ZEII
@@ -1572,12 +1572,12 @@ function descrZeii(){
 function zeii_IIIa(){
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL (III-A)'
     descrZeii()
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido... (Ver com a Val ou tirar foto de uma certidão).</span>`
+    desd.innerHTML = `Desdobro mínimo permitido: <span class = "result">500m²</span>`
+    tOcup.innerHTML = `Taxa de Ocupação: <span class = "result">70%</span>`
+    caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
+    caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">2</span>`
+    tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
+    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido indústrias, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.</span>`
 }
 
 function zeii_IIIb(){
