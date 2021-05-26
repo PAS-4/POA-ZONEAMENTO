@@ -139,7 +139,7 @@ aside .result{
     aside{
         position: relative;
         float: none;
-        width: 100vw;
+        width: auto;
         height: auto;
         margin: 0;
     }
