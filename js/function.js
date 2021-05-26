@@ -29,6 +29,7 @@ function msgErro(){
 }
 
 function semMsgErro(){
+    mapa.style.display = 'block'
     erro.style.display = 'none'
     descr.style.display = 'block'
     desd.style.display = 'block'

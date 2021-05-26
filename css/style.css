@@ -74,6 +74,8 @@ select{
     width: 90%;
     margin: auto;
     padding: 10px;
+    text-align: center;
+    font-size: 15pt;
     border-radius: 10px;
     font-weight: bolder;
     background-color: orange;
