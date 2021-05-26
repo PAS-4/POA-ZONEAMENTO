@@ -15,7 +15,7 @@ let tPerm = document.querySelector('#tPerm')
 let viab = document.querySelector('#viab')
 
 function msgErro(){
-    mapa.style.display = 'none'
+    mapa.src = "image/mapa_tabela_zonaRural/mapaCompletoSmall.jpg"
     erro.style.display = 'block'
     zoneamento.innerHTML = '#ERRO'
     zoneamento.style.backgroundColor = '#fff'
@@ -29,7 +29,6 @@ function msgErro(){
 }
 
 function semMsgErro(){
-    mapa.style.display = 'block'
     erro.style.display = 'none'
     descr.style.display = 'block'
     desd.style.display = 'block'
