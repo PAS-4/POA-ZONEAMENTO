@@ -16,6 +16,7 @@ let viab = document.querySelector('#viab')
 
 function msgErro(){
     mapa.src = "image/mapa_tabela_zonaRural/mapaCompletoSmall.jpg"
+    mapa.style.boxShadow = '0px 0px 10px #ff0000'
     erro.style.display = 'block'
     zoneamento.innerHTML = '#ERRO'
     zoneamento.style.backgroundColor = '#fff'
@@ -30,6 +31,7 @@ function msgErro(){
 
 function semMsgErro(){
     mapa.style.display = 'block'
+    mapa.style.boxShadow = '0px 0px 10px #046DB5'
     erro.style.display = 'none'
     descr.style.display = 'block'
     desd.style.display = 'block'
@@ -52,11 +54,11 @@ function consultar(){
                     case '81':
                     case '92':
                     case '94':
+                        mapa.src = "image/43211/43211.xx/43211.23.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.23.jpg"
                 break
             case '24':
                 switch(quadra.value){
@@ -69,14 +71,15 @@ function consultar(){
                     case '83':
                     case '90':
                     case '99':
+                        mapa.src = "image/43211/43211.xx/43211.24.jpg"
                         break
                     case '33':
                         zeia1()
+                        mapa.src = "image/43211/43211.xx/43211.24.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.24.jpg"
                 break
             case '33':
                 switch(quadra.value){
@@ -84,14 +87,15 @@ function consultar(){
                     case '54':
                     case '74':
                     case '95':
+                        mapa.src = "image/43211/43211.xx/43211.33.jpg"
                         break
                     case '24':
                         zeis1()
+                        mapa.src = "image/43211/43211.xx/43211.33.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.33.jpg"
                 break
             case '34':
                 switch(quadra.value){
@@ -102,14 +106,15 @@ function consultar(){
                     case '74':
                     case '75':
                     case '82':
+                        mapa.src = "image/43211/43211.xx/43211.34.jpg"
                         break
                     case '02':
                         zeis1()
+                        mapa.src = "image/43211/43211.xx/43211.34.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.34.jpg"
                 break
             case '42':
                 switch(quadra.value){
@@ -120,11 +125,11 @@ function consultar(){
                     case '92':
                     case '95':
                     case '96':
+                        mapa.src = "image/43211/43211.xx/43211.42.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.42.jpg"
                 break
             case '44':
                 switch(quadra.value){
@@ -134,14 +139,15 @@ function consultar(){
                     case '73':
                     case '76':
                     case '89':
+                        mapa.src = "image/43211/43211.xx/43211.44.jpg"
                         break
                     case '96':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.44.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.44.jpg"
                 break
             case '51':
                 switch(quadra.value){
@@ -164,18 +170,20 @@ function consultar(){
                     case '72':
                     case '85':
                     case '97':
+                        mapa.src = "image/43211/43211.xx/43211.51.jpg"
                         break
                     case '10':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.51.jpg"
                         break
                     case '82':
                     case '85':
                         zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.51.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.51.jpg"
                 break
             case '52':
                 switch(quadra.value){
@@ -190,11 +198,13 @@ function consultar(){
                     case '86':
                     case '87':
                     case '98':
+                        mapa.src = "image/43211/43211.xx/43211.52.jpg"
                         break
                     case '22':
                     case '31':
                     case '50':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.52.jpg"
                         break
                     case '34':
                     case '54':
@@ -202,16 +212,17 @@ function consultar(){
                     case '82':
                     case '85':
                         zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.52.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.52.jpg"
                 break
             case '53':
                 switch(quadra.value){
                     case '48':
                     case '59':
+                        mapa.src = "image/43211/43211.xx/43211.53.jpg"
                         break
                     case '05':
                     case '13':
@@ -225,17 +236,18 @@ function consultar(){
                     case '71':
                     case '75':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.53.jpg"
                         break
                     case '67':
                     case '78':
                     case '79':
                     case '80':
                         zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.53.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.53.jpg"
                 break
             case '54':
                 switch(quadra.value){
@@ -245,6 +257,7 @@ function consultar(){
                     case '54':
                     case '93':
                         zeia1()
+                        mapa.src = "image/43211/43211.xx/43211.54.jpg"
                         break
                     case '02':
                     case '09':
@@ -258,11 +271,11 @@ function consultar(){
                     case '95':
                     case '99':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.54.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.54.jpg"
                 break
             case '61':
                 switch(quadra.value){
@@ -273,9 +286,11 @@ function consultar(){
                     case '28':
                     case '39':
                     case '78':
+                        mapa.src = "image/43211/43211.xx/43211.61.jpg"
                         break
                     case '01':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.61.jpg"
                         break
                     case '05':
                     case '20':
@@ -287,20 +302,22 @@ function consultar(){
                     case '93':
                     case '96':
                         zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.61.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.61.jpg"
                 break
             case '62':
                 switch(quadra.value){
                     case '48':
                     case '56':
+                        mapa.src = "image/43211/43211.xx/43211.62.jpg"
                         break
                     case '76':
                     case '83':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.62.jpg"
                         break
                     case '10':
                     case '12':
@@ -312,23 +329,25 @@ function consultar(){
                     case '43':
                     case '80':
                         zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.62.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.62.jpg"
                 break
             case '63':
                 switch(quadra.value){
                     case '02':
                     case '12':
                         zeia1()
+                        mapa.src = "image/43211/43211.xx/43211.63.jpg"
                         break
                     case '08':
                     case '40':
                     case '60':
                     case '80':
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.63.jpg"
                         break
                     case '04':
                     case '16':
@@ -337,11 +356,11 @@ function consultar(){
                     case '83':
                     case '94':
                         zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.63.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.63.jpg"
                 break
             case '64':
                 switch(quadra.value){
@@ -361,11 +380,11 @@ function consultar(){
                     case '93':
                     case '96':
                         zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.64.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43211/43211.xx/43211.64.jpg"
                 break
             default:
                 msgErro()
@@ -381,11 +400,11 @@ function consultar(){
                     case '76':
                     case '83':
                     case '90':
+                        mapa.src = "image/43212/43212.xx/43212.13.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.13.jpg"
                 break
             case '14':
                 switch(quadra.value){
@@ -403,34 +422,37 @@ function consultar(){
                     case '73':
                     case '74':
                     case '75':
+                        mapa.src = "image/43212/43212.xx/43212.14.jpg"
                         break
                     case '67':
                     case '87':
                         zeia4()
+                        mapa.src = "image/43212/43212.xx/43212.14.jpg"
                         break
                     case '95':
                     case '96':
                         zeii_IIIa()
+                        mapa.src = "image/43212/43212.xx/43212.14.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.14.jpg"
                 break
             case '23':
                 switch(quadra.value){
                     case '01':
                     case '03':
                         zeii_IIIa()
+                        mapa.src = "image/43212/43212.xx/43212.23.jpg"
                         break
                     case '37':
                     case '45':
                         zeia4()
+                        mapa.src = "image/43212/43212.xx/43212.23.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.23.jpg"
                 break
             case '24':
                 zeia1()
@@ -459,14 +481,15 @@ function consultar(){
                     case '86':
                     case '91':
                     case '94':
+                        mapa.src = "image/43212/43212.xx/43212.41.jpg"
                         break
                     case '62':
                         zeic()
+                        mapa.src = "image/43212/43212.xx/43212.41.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.41.jpg"
                 break
             case '42':
                 switch(quadra.value){
@@ -489,15 +512,16 @@ function consultar(){
                     case '67':
                     case '77':
                     case '79':
+                        mapa.src = "image/43212/43212.xx/43212.42.jpg"
                         break
                     case '70':
                     case '74':
                         zeii_IIIa()
+                        mapa.src = "image/43212/43212.xx/43212.42.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.42.jpg"
                 break
             case '43':
                 switch(quadra.value){
@@ -506,10 +530,12 @@ function consultar(){
                     case '87':
                     case '89':
                     case '95':
+                        mapa.src = "image/43212/43212.xx/43212.43.jpg"
                         break
                     case '03':
                     case '29':
                         zeia3()
+                        mapa.src = "image/43212/43212.xx/43212.43.jpg"
                         break
                     case '00':
                     case '21':
@@ -530,11 +556,11 @@ function consultar(){
                     case '84':
                     case '90':
                         zeic()
+                        mapa.src = "image/43212/43212.xx/43212.43.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.43.jpg"
                 break
             case '44':
                 switch(quadra.value){
@@ -549,33 +575,36 @@ function consultar(){
                     case '47':
                     case '49':
                     case '68':
+                        mapa.src = "image/43212/43212.xx/43212.44.jpg"
                         break
                     case '04':
                         zeic()
+                        mapa.src = "image/43212/43212.xx/43212.44.jpg"
                         break
                     case '24':
                     case '56':
                     case '61':
                     case '87':
                         zeii_IIIa()
+                        mapa.src = "image/43212/43212.xx/43212.44.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.44.jpg"
                 break
             case '51':
                 switch(quadra.value){
                     case '05':
                         zeii_IIIa()
+                        mapa.src = "image/43212/43212.xx/43212.51.jpg"
                         break
                     case '56':
                         zeia4()
+                        mapa.src = "image/43212/43212.xx/43212.51.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.51.jpg"
                 break
             case '52':
                 zeia4()
@@ -587,11 +616,11 @@ function consultar(){
                     case '12':
                     case '21':
                     case '34':
+                        mapa.src = "image/43212/43212.xx/43212.53.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43212/43212.xx/43212.53.jpg"
                 break
             case '54':
                 zeia4()
@@ -605,6 +634,7 @@ function consultar(){
             case '12':
                 switch(quadra.value){
                     case '69':
+                        mapa.src = "image/43213/43213.xx/43213.12.jpg"
                         break
                     case '36':
                     case '46':
@@ -614,11 +644,11 @@ function consultar(){
                     case '86':
                     case '96':
                         zeia3()
+                        mapa.src = "image/43213/43213.xx/43213.12.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.12.jpg"
                 break
             case '14':
                 switch(quadra.value){
@@ -626,16 +656,17 @@ function consultar(){
                     case '89':
                     case '98':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.14.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.14.jpg"
                 break
             case '21':
                 switch(quadra.value){
                     case '02':
                         zeia1()
+                        mapa.src = "image/43213/43213.xx/43213.21.jpg"
                         break
                     case '01':
                     case '04':
@@ -649,27 +680,28 @@ function consultar(){
                     case '68':
                     case '87':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.21.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.21.jpg"
                 break
             case '22':
                 switch(quadra.value){
                     case '11':
                     case '53':
                         zeia1()
+                        mapa.src = "image/43213/43213.xx/43213.22.jpg"
                         break
                     case '08':
                     case '37':
                     case '88':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.22.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.22.jpg"
                 break
             case '23':
                 switch(quadra.value){
@@ -684,11 +716,11 @@ function consultar(){
                     case '66':
                     case '79':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.23.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.23.jpg"
                 break
             case '24':
                 switch(quadra.value){
@@ -700,11 +732,11 @@ function consultar(){
                     case '77':
                     case '97':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.24.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.24.jpg"
                 break
             case '31':
                 switch(quadra.value){
@@ -713,10 +745,12 @@ function consultar(){
                     case '76':
                     case '90':
                     case '94':
+                        mapa.src = "image/43213/43213.xx/43213.31.jpg"
                         break
                     case '08':
                     case '17':
                         zeia1()
+                        mapa.src = "image/43213/43213.xx/43213.31.jpg"
                         break
                     case '15':
                     case '21':
@@ -728,11 +762,11 @@ function consultar(){
                     case '46':
                     case '48':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.31.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.31.jpg"
                 break
             case '32':
                 switch(quadra.value){
@@ -745,9 +779,11 @@ function consultar(){
                     case '53':
                     case '65':
                     case '73':
+                        mapa.src = "image/43213/43213.xx/43213.32.jpg"
                         break
                     case '19':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.32.jpg"
                         break
                     case '40':
                     case '61':
@@ -758,11 +794,11 @@ function consultar(){
                     case '94':
                     case '97':
                         zeic()
+                        mapa.src = "image/43213/43213.xx/43213.32.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.32.jpg"
                 break
             case '33':
                 switch(quadra.value){
@@ -777,17 +813,18 @@ function consultar(){
                     case '88':
                     case '91':
                     case '97':
+                        mapa.src = "image/43213/43213.xx/43213.33.jpg"
                         break
                     case '17':
                     case '26':
                     case '29':
                     case '36':
                         zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.33.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.33.jpg"
                 break
             case '34':
                 switch(quadra.value){
@@ -802,6 +839,7 @@ function consultar(){
                     case '36':
                     case '55':
                     case '71':
+                        mapa.src = "image/43213/43213.xx/43213.34.jpg"
                         break
                     case '42':
                     case '67':
@@ -809,11 +847,11 @@ function consultar(){
                     case '93':
                     case '99':
                         zeic()
+                        mapa.src = "image/43213/43213.xx/43213.34.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.34.jpg"
                 break
             case '52':
                 switch(quadra.value){
@@ -825,11 +863,11 @@ function consultar(){
                     case '93':
                     case '95':
                     case '97':
+                        mapa.src = "image/43213/43213.xx/43213.52.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.52.jpg"
                 break
             case '61':
                 switch(quadra.value){
@@ -860,11 +898,11 @@ function consultar(){
                     case '86':
                     case '89':
                     case '93':
+                        mapa.src = "image/43213/43213.xx/43213.61.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.61.jpg"
                 break
             case '62':
                 switch(quadra.value){
@@ -888,11 +926,11 @@ function consultar(){
                     case '85':
                     case '90':
                     case '91':
+                        mapa.src = "image/43213/43213.xx/43213.62.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.62.jpg"
                 break
             case '63':
                 switch(quadra.value){
@@ -910,14 +948,15 @@ function consultar(){
                     case '79':
                     case '88':
                     case '95':
+                        mapa.src = "image/43213/43213.xx/43213.63.jpg"
                         break
                     case '54':
                         zeis1()
+                        mapa.src = "image/43213/43213.xx/43213.63.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43213/43213.xx/43213.63.jpg"
                 break
             case '64':
                 switch(quadra.value){
@@ -956,6 +995,7 @@ function consultar(){
                     case '94':
                     case '96':
                     case '97':
+                        mapa.src = "image/43214/43214.xx/43214.11.jpg"
                         break
                     case '00':
                     case '02':
@@ -976,11 +1016,11 @@ function consultar(){
                     case '69':
                     case '77':
                         zeic()
+                        mapa.src = "image/43214/43214.xx/43214.11.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.11.jpg"
                 break
             case '12':
                 switch(quadra.value){
@@ -1000,11 +1040,11 @@ function consultar(){
                     case '60':
                     case '61':
                     case '91':
+                        mapa.src = "image/43214/43214.xx/43214.12.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.12.jpg"
                 break
             case '13':
                 switch(quadra.value){
@@ -1025,11 +1065,11 @@ function consultar(){
                     case '77':
                     case '81':
                     case '95':
+                        mapa.src = "image/43214/43214.xx/43214.13.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.13.jpg"
                 break
             case '14':
                 switch(quadra.value){
@@ -1061,22 +1101,22 @@ function consultar(){
                     case '91':
                     case '92':
                     case '93':
+                        mapa.src = "image/43214/43214.xx/43214.14.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.14.jpg"
                 break
             case '21':
                 switch(quadra.value){
                     case '09':
                     case '46':
                         zeii_IIIa()
+                        mapa.src = "image/43214/43214.xx/43214.21.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.21.jpg"
                 break
             case '22':
                 zeia1()
@@ -1085,14 +1125,15 @@ function consultar(){
             case '23':
                 switch(quadra.value){
                     case '30':
+                        mapa.src = "image/43214/43214.xx/43214.23.jpg"
                         break
                     case '45':
                         zeii_IIIa()
+                        mapa.src = "image/43214/43214.xx/43214.23.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.23.jpg"
                 break
             case '41':
                 switch(quadra.value){
@@ -1108,11 +1149,11 @@ function consultar(){
                     case '81':
                     case '84':
                     case '99':
+                        mapa.src = "image/43214/43214.xx/43214.41.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.41.jpg"
                 break
             case '42':
                 switch(quadra.value){
@@ -1138,17 +1179,18 @@ function consultar(){
                     case '88':
                     case '89':
                     case '95':
+                        mapa.src = "image/43214/43214.xx/43214.42.jpg"
                         break
                     case '01':
                     case '03':
                     case '33':
                     case '93':
                         zeii_IIIb()
+                        mapa.src = "image/43214/43214.xx/43214.42.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.42.jpg"
                 break
             case '43':
                 switch(quadra.value){
@@ -1159,21 +1201,21 @@ function consultar(){
                     case '48':
                     case '54':
                     case '76':
+                        mapa.src = "image/43214/43214.xx/43214.43.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.43.jpg"
                 break
             case '44':
                 switch(quadra.value){
                     case '58':
                         zeii_IIIb()
+                        mapa.src = "image/43214/43214.xx/43214.44.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.44.jpg"
                 break
             case '51':
                 switch(quadra.value){
@@ -1184,11 +1226,11 @@ function consultar(){
                     case '25':
                     case '35':
                     case '38':
+                        mapa.src = "image/43214/43214.xx/43214.51.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43214/43214.xx/43214.51.jpg"
                 break
             case '53':
                 zeii_IIIb()
@@ -1223,11 +1265,11 @@ function consultar(){
                     case '85':
                     case '89':
                     case '98':
+                        mapa.src = "image/43231/43231.xx/43231.24.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43231/43231.xx/43231.24.jpg"
                 break
             case '31':
                 switch(quadra.value){
@@ -1241,14 +1283,15 @@ function consultar(){
                     case '83':
                     case '84':
                     case '95':
+                        mapa.src = "image/43231/43231.xx/43231.31.jpg"
                         break
                     case '77':
                         zeia2()
+                        mapa.src = "image/43231/43231.xx/43231.31.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43231/43231.xx/43231.31.jpg"
                 break
             case '32':
                 switch(quadra.value){
@@ -1258,14 +1301,15 @@ function consultar(){
                     case '87':
                     case '95':
                     case '96':
+                        mapa.src = "image/43231/43231.xx/43231.32.jpg"
                         break
                     case '35':
                         zeia2()
+                        mapa.src = "image/43231/43231.xx/43231.32.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43231/43231.xx/43231.32.jpg"
                 break
             case '33':
                 switch(quadra.value){
@@ -1291,11 +1335,11 @@ function consultar(){
                     case '68':
                     case '75':
                     case '92':
+                        mapa.src = "image/43231/43231.xx/43231.33.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43231/43231.xx/43231.33.jpg"
                 break
             case '34':
                 switch(quadra.value){
@@ -1312,24 +1356,25 @@ function consultar(){
                     case '79':
                     case '82':
                     case '91':
+                        mapa.src = "image/43231/43231.xx/43231.34.jpg"
                         break
                     case '57':
                     case '69':
                         zeia2()
+                        mapa.src = "image/43231/43231.xx/43231.34.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43231/43231.xx/43231.34.jpg"
                 break
             case '52':
                 switch(quadra.value){
                     case '97':
+                        mapa.src = "image/43231/43231.xx/43231.52.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43231/43231.xx/43231.52.jpg"
                 break
             case '54':
                 zeia3()
@@ -1346,13 +1391,14 @@ function consultar(){
                     case '94':
                         mapa.src = "image/43231/43231.xx/43231.61.jpg"
                         break
-                    case '50':
-                    case '97':
-                        mapa.src = "image/43231/43231.xx/43231.61.jpg"
-                        zeis3()
-                        break
                     case '91':
                         mapa.src = "image/43231/43231.xx/43231.61.91.jpg"
+                        break
+                    case '50':
+                    case '97':
+                        zeis3()
+                        mapa.src = "image/43231/43231.xx/43231.61.jpg"
+                        break
                     default:
                         msgErro()
                 }
@@ -1408,8 +1454,8 @@ function consultar(){
                         break
                     case '27':
                     case '66':
-                        mapa.src = "image/43231/43231.xx/43231.64.jpg"
                         zeia3()
+                        mapa.src = "image/43231/43231.xx/43231.64.jpg"
                         break
                     default:
                         msgErro()
@@ -1435,14 +1481,15 @@ function consultar(){
                     case '59':
                     case '66':
                     case '74':
+                        mapa.src = "image/43232/43232.xx/43232.11.jpg"
                         break
                     case '94':
                         zeia1()
+                        mapa.src = "image/43232/43232.xx/43232.11.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43232/43232.xx/43232.11.jpg"
                 break
             case '12':
                 mapa.src = "image/43232/43232.xx/43232.12.jpg"
@@ -1456,14 +1503,15 @@ function consultar(){
                     case '20':
                     case '23':
                     case '25':
+                        mapa.src = "image/43232/43232.xx/43232.13.jpg"
                         break
                     case '44':
                         zeia1()
+                        mapa.src = "image/43232/43232.xx/43232.13.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43232/43232.xx/43232.13.jpg"
                 break
             case '41':
                 switch(quadra.value){
@@ -1475,17 +1523,19 @@ function consultar(){
                     case '14':
                     case '17':
                     case '29':
+                        mapa.src = "image/43232/43232.xx/43232.41.jpg"
                         break
                     case '22':
                         zeia1()
+                        mapa.src = "image/43232/43232.xx/43232.41.jpg"
                         break
                     case '90':
                         zeis3()
+                        mapa.src = "image/43232/43232.xx/43232.41.jpg"
                         break
                     default:
                         msgErro()
                 }
-                mapa.src = "image/43232/43232.xx/43232.41.jpg"
                 break
             case '43':
                 zeia1()

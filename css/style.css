@@ -94,7 +94,7 @@ aside h1{
     font-size: 15pt;
     border-radius: 10px;
     font-weight: bolder;
-    background-color: orange;
+    background-color: #ff000099;
 }
 
 aside hr{
@@ -111,7 +111,7 @@ aside p{
 
 aside .result{
     font-size: 20pt;
-    text-decoration: underline;
+    color: #046DB5;
 }
 
 /*RESPONSIVE*/
