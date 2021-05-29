@@ -1,6 +1,8 @@
 let parametro = document.querySelector('#parametro')
 let quadrante = document.querySelector('#quadrante')
 let quadra = document.querySelector('#quadra')
+let classCheck = document.querySelector('.fa-check')
+let classTimes = document.querySelector('.fa-times')
 let erro = document.querySelector('#erro')
 let mapa = document.querySelector('#mapa')
 let aside = document.querySelector('aside')
@@ -15,6 +17,8 @@ let tPerm = document.querySelector('#tPerm')
 let viab = document.querySelector('#viab')
 
 function msgErro(){
+    classCheck.style.display = 'none'
+    classTimes.style.display = 'block'
     mapa.src = "image/mapa_tabela_zonaRural/mapaCompletoSmall.jpg"
     mapa.style.boxShadow = '0px 0px 10px #ff0000'
     erro.style.display = 'block'
@@ -30,6 +34,8 @@ function msgErro(){
 }
 
 function semMsgErro(){
+    classCheck.style.display = 'block'
+    classTimes.style.display = 'none'
     mapa.style.display = 'block'
     mapa.style.boxShadow = '0px 0px 10px #046DB5'
     erro.style.display = 'none'

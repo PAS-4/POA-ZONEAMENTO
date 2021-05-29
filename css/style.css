@@ -14,7 +14,6 @@ section{
     height: 100vh;
     text-align: center;
     box-shadow: 0px 0px 5px #000;
-    overflow-y: auto;
 }
 
 #section-select{
@@ -35,6 +34,29 @@ select{
     margin: 0 0 10px 0;
     font-weight: bolder;
     font-size: 15pt;
+}
+
+.checkOrTimes{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.fa .fa-check, .fa .fa-times{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    display: none;
+}
+
+.fa-times{
+    color: #C00;
+}
+
+.fa-check{
+    color: #0C0;
 }
 
 #consulta{
