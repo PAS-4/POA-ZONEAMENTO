@@ -79,7 +79,6 @@ select{
 #section-img{
     position: relative;
     height: calc(100vh - 225px);
-    background-color: #999;
 }
 
 #mapa{
