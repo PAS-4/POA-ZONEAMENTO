@@ -91,7 +91,7 @@ select{
     transform: translateY(-50%);
 }
 
-aside{
+aside, article{
     position: relative;
     float: right;
     width: 70vw;
