@@ -17,6 +17,7 @@ let tPerm = document.querySelector('#tPerm')
 let viab = document.querySelector('#viab')
 let indices = document.querySelector('.indices')
 let recuos = document.querySelector('.recuos')
+let risco = document.querySelector('.risco')
 
 function msgErro(){
     classCheck.style.display = 'none'
@@ -37,6 +38,7 @@ function msgErro(){
     viab.style.display = 'none'
     indices.style.display = 'none'
     recuos.style.display = 'none'
+    risco.style.display = 'none'
 }
 
 function semMsgErro(){
@@ -58,6 +60,7 @@ function semMsgErro(){
     viab.style.display = 'block'
     indices.style.display = 'block'
     recuos.style.display = 'block'
+    risco.style.display = 'block'
 }
 
 function consultar(){
