@@ -144,6 +144,13 @@ aside .result{
     float: left;
 }
 
+.risco{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
 /*RESPONSIVE*/
 
 @media(max-width: 360px){

@@ -7,6 +7,7 @@ let erro = document.querySelector('#erro')
 let mapa = document.querySelector('#mapa')
 let aside = document.querySelector('aside')
 let inscr = document.querySelector('#inscr')
+let tipoConstruc = document.querySelector('#tipoConstruc')
 let zoneamento = document.querySelector('#zoneamento')
 let descr = document.querySelector('#descr')
 let desd = document.querySelector('#desd')
@@ -18,6 +19,10 @@ let viab = document.querySelector('#viab')
 let indices = document.querySelector('.indices')
 let recuos = document.querySelector('.recuos')
 let risco = document.querySelector('.risco')
+let tipConstr = document.querySelector('#tipConstr')
+let recFrontal = document.querySelector('#recFrontal')
+let recLateral = document.querySelector('#recLateral')
+let recFundos = document.querySelector('#recFundos')
 
 function msgErro(){
     classCheck.style.display = 'none'
@@ -38,7 +43,6 @@ function msgErro(){
     viab.style.display = 'none'
     indices.style.display = 'none'
     recuos.style.display = 'none'
-    risco.style.display = 'none'
 }
 
 function semMsgErro(){
@@ -60,7 +64,6 @@ function semMsgErro(){
     viab.style.display = 'block'
     indices.style.display = 'block'
     recuos.style.display = 'block'
-    risco.style.display = 'block'
 }
 
 function consultar(){
@@ -1578,7 +1581,7 @@ function muc(){
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">6</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.</span>`
+    zonaI()
 }//MUC
 
 //ZEIA
@@ -1715,3 +1718,17 @@ function zeis3(){
     tPerm.style.display = 'none'
     viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido... (Ver com a Val ou tirar foto de uma certidão).</span>`
 }//ZEIS
+
+//ZONAS
+function zonaI(){
+    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.</span>`
+    tipConstr.innerHTML = `Tipo da Construção: <span class = "result">Comercial</span>`
+    recFrontal.innerHTML = `Frontal: <span class = "result">6</span>`
+    recLateral.innerHTML = `Laterais: <span class = "result">0</span>`
+    recFundos.innerHTML = `Fundos: <span class = "result">0</span>`
+}
+//ZONAS
+
+
+//ÁREAS DE RISCO
+//ÁREAS DE RISCO
