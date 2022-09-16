@@ -142,11 +142,19 @@ aside .resultRed{
     color: #ff000099;
 }
 
-.indices, .recuos{
+.indices, .recuos, .msgProibido{
     position: relative;
     width: 50%;
     height: auto;
     float: left;
+}
+
+.recuos{
+    display: none;
+}
+
+#comEspecial{
+    display: none;
 }
 
 .risco{

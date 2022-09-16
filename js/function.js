@@ -23,6 +23,9 @@ let tipConstr = document.querySelector('#tipConstr')
 let recFrontal = document.querySelector('#recFrontal')
 let recLateral = document.querySelector('#recLateral')
 let recFundos = document.querySelector('#recFundos')
+let janPav = document.querySelector('.janPav')
+let comEspecial = document.querySelector('#comEspecial')
+let msgProibido = document.querySelector('#msgProibido')
 
 function msgErro(){
     classCheck.style.display = 'none'
@@ -51,6 +54,7 @@ function semMsgErro(){
     mapa.style.display = 'block'
     mapa.style.boxShadow = '0px 0px 10px #046DB5'
     erro.style.display = 'none'
+    comEspecial.style.display = 'none'
     /*
     descr.style.display = 'block'
     desd.style.display = 'block'
@@ -63,7 +67,7 @@ function semMsgErro(){
     descr.style.display = 'block'
     viab.style.display = 'block'
     indices.style.display = 'block'
-    recuos.style.display = 'block'
+    //recuos.style.display = 'block'
 }
 
 function consultar(){
@@ -1581,7 +1585,7 @@ function muc(){
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">6</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
-    zonaI()
+    //zonaIIa()
 }//MUC
 
 //ZEIA
@@ -1721,11 +1725,29 @@ function zeis3(){
 
 //ZONAS
 function zonaI(){
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.</span>`
-    tipConstr.innerHTML = `Tipo da Construção: <span class = "result">${tipoConstruc.value} <span class = "resultRed">(Verificar viabilidade acima)</span></span>`
-    recFrontal.innerHTML = `Frontal: <span class = "result">6</span>`
+    viab.innerHTML = `Viabilidade (Zona I): <span class = "result">Permitido residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.</span>`
+    tipConstr.innerHTML = `Tipo da Construção: <span class = "result">${tipoConstruc.value}</span>`
+    recFrontal.innerHTML = `Frontal: <span class = "result">Mínimo 4,00 Metros</span>`
     recLateral.innerHTML = `Laterais: <span class = "result">0</span>`
-    recFundos.innerHTML = `Fundos: <span class = "result">0</span>`
+    if(tipoConstruc.value === 'Comercial'){
+        recFundos.innerHTML = `Fundos: <span class = "result">Mínimo 3,00 Metros</span>`
+        comEspecial.style.display = "block"
+    }else{
+        recFundos.innerHTML = `Fundos: <span class = "result">0</span>`
+    }
+}
+
+function zonaIIa(){
+    viab.innerHTML = `Viabilidade (Zona IIa): <span class = "result">Permitido residência unifamiliar, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.</span>`
+    tipConstr.innerHTML = `Tipo da Construção: <span class = "result">${tipoConstruc.value}</span>`
+    if(tipoConstruc.value === 'Residencial'){
+        recFrontal.innerHTML = `Frontal: <span class = "result">Mínimo 6,00 Metros</span>`
+        recLateral.innerHTML = `Laterais: <span class = "result">Mínimo 1,50 Metro</span>`
+        recFundos.innerHTML = `Fundos: <span class = "result">Mínimo 3,00 Metros</span>`
+    }else{
+        recuos.style.display = 'none'
+        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido Construção ${tipoConstruc.value} no local</span>`
+    }
 }
 //ZONAS
 
