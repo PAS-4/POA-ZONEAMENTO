@@ -1721,8 +1721,8 @@ function zeis3(){
 
 //ZONAS
 function zonaI(){
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.</span>`
-    tipConstr.innerHTML = `Tipo da Construção: <span class = "result">Comercial</span>`
+    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.</span>`
+    tipConstr.innerHTML = `Tipo da Construção: <span class = "result">${tipoConstruc.value} <span class = "resultRed">(Verificar viabilidade acima)</span></span>`
     recFrontal.innerHTML = `Frontal: <span class = "result">6</span>`
     recLateral.innerHTML = `Laterais: <span class = "result">0</span>`
     recFundos.innerHTML = `Fundos: <span class = "result">0</span>`

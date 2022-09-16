@@ -137,6 +137,11 @@ aside .result{
     color: #046DB5;
 }
 
+aside .resultRed{
+    font-size: 20pt;
+    color: #ff000099;
+}
+
 .indices, .recuos{
     position: relative;
     width: 50%;
