@@ -18,7 +18,7 @@ section{
 
 #section-select{
     position: relative;
-    height: 225px;
+    height: auto;
     z-index: 1;
 }
 
@@ -91,7 +91,7 @@ select{
     transform: translateY(-50%);
 }
 
-aside, article{
+aside{
     position: relative;
     float: right;
     width: 70vw;
@@ -135,6 +135,14 @@ aside p{
 aside .result{
     font-size: 20pt;
     color: #046DB5;
+}
+
+.indices, .recuos{
+    position: relative;
+    width: 50%;
+    height: auto;
+    float: left;
+    
 }
 
 /*RESPONSIVE*/

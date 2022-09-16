@@ -15,6 +15,8 @@ let caBasico = document.querySelector('#caBasico')
 let caMaximo = document.querySelector('#caMaximo')
 let tPerm = document.querySelector('#tPerm')
 let viab = document.querySelector('#viab')
+let indices = document.querySelector('.indices')
+let recuos = document.querySelector('.recuos')
 
 function msgErro(){
     classCheck.style.display = 'none'
@@ -24,13 +26,17 @@ function msgErro(){
     erro.style.display = 'block'
     zoneamento.innerHTML = '#ERRO'
     zoneamento.style.backgroundColor = '#fff'
-    descr.style.display = 'none'
+    /*
     desd.style.display = 'none'
     tOcup.style.display = 'none'
     caBasico.style.display = 'none'
     caMaximo.style.display = 'none'
     tPerm.style.display = 'none'
+    */
+    descr.style.display = 'none'
     viab.style.display = 'none'
+    indices.style.display = 'none'
+    recuos.style.display = 'none'
 }
 
 function semMsgErro(){
@@ -39,6 +45,7 @@ function semMsgErro(){
     mapa.style.display = 'block'
     mapa.style.boxShadow = '0px 0px 10px #046DB5'
     erro.style.display = 'none'
+    /*
     descr.style.display = 'block'
     desd.style.display = 'block'
     tOcup.style.display = 'block'
@@ -46,6 +53,11 @@ function semMsgErro(){
     caMaximo.style.display = 'block'
     tPerm.style.display = 'block'
     viab.style.display = 'block'
+    */
+    descr.style.display = 'block'
+    viab.style.display = 'block'
+    indices.style.display = 'block'
+    recuos.style.display = 'block'
 }
 
 function consultar(){
