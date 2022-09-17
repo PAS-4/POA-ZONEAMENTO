@@ -1,4 +1,4 @@
-let parametro = document.querySelector('#parametro')
+/* let parametro = document.querySelector('#parametro')
 let quadrante = document.querySelector('#quadrante')
 let quadra = document.querySelector('#quadra')
 let classCheck = document.querySelector('.fa-check')
@@ -7,7 +7,6 @@ let erro = document.querySelector('#erro')
 let mapa = document.querySelector('#mapa')
 let aside = document.querySelector('aside')
 let inscr = document.querySelector('#inscr')
-let tipoConstruc = document.querySelector('#tipoConstruc')
 let zoneamento = document.querySelector('#zoneamento')
 let descr = document.querySelector('#descr')
 let desd = document.querySelector('#desd')
@@ -15,10 +14,11 @@ let tOcup = document.querySelector('#tOcup')
 let caBasico = document.querySelector('#caBasico')
 let caMaximo = document.querySelector('#caMaximo')
 let tPerm = document.querySelector('#tPerm')
+let indices = document.querySelector('.indices') */
+let tipoConstruc = document.querySelector('#tipoConstruc')
 let viab = document.querySelector('#viab')
-let indices = document.querySelector('.indices')
 let recuos = document.querySelector('.recuos')
-let risco = document.querySelector('.risco')
+// let risco = document.querySelector('.risco')
 let tipConstr = document.querySelector('#tipConstr')
 let recFrontal = document.querySelector('#recFrontal')
 let recLateral = document.querySelector('#recLateral')
@@ -27,53 +27,53 @@ let janPav = document.querySelector('.janPav')
 let comEspecial = document.querySelector('#comEspecial')
 let msgProibido = document.querySelector('#msgProibido')
 
-function msgErro(){
-    classCheck.style.display = 'none'
-    classTimes.style.display = 'block'
-    mapa.src = "image/mapa_tabela_zonaRural/mapaCompletoSmall.jpg"
-    mapa.style.boxShadow = '0px 0px 10px #ff0000'
-    erro.style.display = 'block'
-    zoneamento.innerHTML = '#ERRO'
-    zoneamento.style.backgroundColor = '#fff'
-    /*
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
-    */
-    descr.style.display = 'none'
-    viab.style.display = 'none'
-    indices.style.display = 'none'
-    recuos.style.display = 'none'
-}
+// function msgErro(){
+//     classCheck.style.display = 'none'
+//     classTimes.style.display = 'block'
+//     mapa.src = "image/mapa_tabela_zonaRural/mapaCompletoSmall.jpg"
+//     mapa.style.boxShadow = '0px 0px 10px #ff0000'
+//     erro.style.display = 'block'
+//     zoneamento.innerHTML = '#ERRO'
+//     zoneamento.style.backgroundColor = '#fff'
+//     /*
+//     desd.style.display = 'none'
+//     tOcup.style.display = 'none'
+//     caBasico.style.display = 'none'
+//     caMaximo.style.display = 'none'
+//     tPerm.style.display = 'none'
+//     */
+//     descr.style.display = 'none'
+//     viab.style.display = 'none'
+//     indices.style.display = 'none'
+//     recuos.style.display = 'none'
+// }
 
-function semMsgErro(){
-    classCheck.style.display = 'block'
-    classTimes.style.display = 'none'
-    mapa.style.display = 'block'
-    mapa.style.boxShadow = '0px 0px 10px #046DB5'
-    erro.style.display = 'none'
-    comEspecial.style.display = 'none'
-    /*
-    descr.style.display = 'block'
-    desd.style.display = 'block'
-    tOcup.style.display = 'block'
-    caBasico.style.display = 'block'
-    caMaximo.style.display = 'block'
-    tPerm.style.display = 'block'
-    viab.style.display = 'block'
-    */
-    descr.style.display = 'block'
-    viab.style.display = 'block'
-    indices.style.display = 'block'
-    recuos.style.display = 'block'
-}
+// function semMsgErro(){
+//     classCheck.style.display = 'block'
+//     classTimes.style.display = 'none'
+//     mapa.style.display = 'block'
+//     mapa.style.boxShadow = '0px 0px 10px #046DB5'
+//     erro.style.display = 'none'
+//     comEspecial.style.display = 'none'
+//     /*
+//     descr.style.display = 'block'
+//     desd.style.display = 'block'
+//     tOcup.style.display = 'block'
+//     caBasico.style.display = 'block'
+//     caMaximo.style.display = 'block'
+//     tPerm.style.display = 'block'
+//     viab.style.display = 'block'
+//     */
+//     descr.style.display = 'block'
+//     viab.style.display = 'block'
+//     indices.style.display = 'block'
+//     recuos.style.display = 'block'
+// }
 
 function consultar(){
-    semMsgErro()
-    inscr.innerHTML = `Inscrição: <span class = "result">${parametro.value}.${quadrante.value}.${quadra.value}</span>`
-    muc()
+    // // semMsgErro()
+    // inscr.innerHTML = `Inscrição: <span class = "result">${parametro.value}.${quadrante.value}.${quadra.value}</span>`
+    // muc()
     if(parametro.value === '43211'){
         switch(quadrante.value){
             case '23':
@@ -1585,7 +1585,6 @@ function muc(){
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">6</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
-    zonaIIa()
 }//MUC
 
 //ZEIA
@@ -1777,8 +1776,13 @@ function zonaIIIa(){
     }else{
         recuos.style.display = 'none'
         msgProibido.style.display = 'block'
-        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido Construção ${tipoConstruc.value} no local</span>`
+        msgProibido.innerHTML = `<span class = "resultRed"> Construção ${tipoConstruc.value} (CS/CF/CE) é permitido somente nas vias que são Corredores Comerciais, não necessitanto de recuos</span>`
     }
+}
+
+function zonaIIIb(){
+    zonaIIIa()
+    viab.innerHTML = `Viabilidade (Zona IIIb): Permitido <span class = "destaque">indústrias</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.`
 }
 //ZONAS
 
