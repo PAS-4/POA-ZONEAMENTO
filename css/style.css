@@ -157,6 +157,13 @@ aside .resultRed{
     display: none;
 }
 
+.destaque{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20pt;
+    color: #046DB5;
+}
+
 .risco{
     position: relative;
     width: 100%;
