@@ -58,6 +58,7 @@ function consultar(){
     semMsgErro()
     inscr.innerHTML = `Inscrição: <span class = "result">${parametro.value}.${quadrante.value}.${quadra.value}</span>`
     muc()
+    zonaI()
     if(parametro.value === '43211'){
         switch(quadrante.value){
             case '23':
@@ -213,16 +214,24 @@ function consultar(){
                         mapa.src = "image/43211/43211.xx/43211.52.jpg"
                         break
                     case '22':
+                        zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.52.jpg"
+                        break
                     case '31':
                     case '50':
+                        zonaIIb()
                         zeia2()
                         mapa.src = "image/43211/43211.xx/43211.52.jpg"
                         break
                     case '34':
+                        zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.52.jpg"
+                        break
                     case '54':
                     case '73':
                     case '82':
                     case '85':
+                        zonaIIb()
                         zeia3()
                         mapa.src = "image/43211/43211.xx/43211.52.jpg"
                         break
@@ -274,14 +283,18 @@ function consultar(){
                     case '02':
                     case '09':
                     case '11':
-                    case '29':
                     case '31':
+                        zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.54.jpg"
+                        break
+                    case '29':
                     case '48':
                     case '57':
                     case '70':
                     case '76':
                     case '95':
                     case '99':
+                        zonaIIb()
                         zeia2()
                         mapa.src = "image/43211/43211.xx/43211.54.jpg"
                         break
@@ -301,18 +314,27 @@ function consultar(){
                         mapa.src = "image/43211/43211.xx/43211.61.jpg"
                         break
                     case '01':
+                        zonaIIb()
                         zeia2()
                         mapa.src = "image/43211/43211.xx/43211.61.jpg"
                         break
                     case '05':
-                    case '20':
                     case '24':
+                        zonaIIb()
+                        zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.61.jpg"
+                        break
+                    case '20':
+                        zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.61.jpg"
+                        break
                     case '72':
                     case '83':
                     case '85':
                     case '86':
                     case '93':
                     case '96':
+                        zonaIIc()
                         zeia3()
                         mapa.src = "image/43211/43211.xx/43211.61.jpg"
                         break
@@ -328,7 +350,12 @@ function consultar(){
                         break
                     case '76':
                     case '83':
+                        zonaIIa()
                         zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.62.jpg"
+                        break
+                    case '80':
+                        zeia3()
                         mapa.src = "image/43211/43211.xx/43211.62.jpg"
                         break
                     case '10':
@@ -339,7 +366,7 @@ function consultar(){
                     case '33':
                     case '40':
                     case '43':
-                    case '80':
+                        zonaIIc()
                         zeia3()
                         mapa.src = "image/43211/43211.xx/43211.62.jpg"
                         break
@@ -355,6 +382,10 @@ function consultar(){
                         mapa.src = "image/43211/43211.xx/43211.63.jpg"
                         break
                     case '08':
+                        zonaIIb()
+                        zeia2()
+                        mapa.src = "image/43211/43211.xx/43211.63.jpg"
+                        break
                     case '40':
                     case '60':
                     case '80':
@@ -377,13 +408,17 @@ function consultar(){
             case '64':
                 switch(quadra.value){
                     case '09':
+                    case '29':
+                    case '49':
+                        zonaIIc()
+                        zeia3()
+                        mapa.src = "image/43211/43211.xx/43211.64.jpg"
+                        break
                     case '11':
                     case '13':
                     case '17':
                     case '26':
-                    case '29':
                     case '33':
-                    case '49':
                     case '50':
                     case '56':
                     case '63':
@@ -438,11 +473,13 @@ function consultar(){
                         break
                     case '67':
                     case '87':
+                        zonaIIIa()
                         zeia4()
                         mapa.src = "image/43212/43212.xx/43212.14.jpg"
                         break
                     case '95':
                     case '96':
+                        zonaIIIa()
                         zeii_IIIa()
                         mapa.src = "image/43212/43212.xx/43212.14.jpg"
                         break
@@ -1619,7 +1656,7 @@ function zeia4(){
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">2</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Área de Proteção Ambiental da Várzea do Rio Tietê (APA), Área de Proteção aos Mananciais (APM) e demais áreas protegidas por legislações Estaduais e Federais.<!-- Permitido indústrias(1) em geral e corredor comercial (CC - Onde é permitido comercio em geral, exceto ZEIA 1), desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.--></span>`
+    // viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Área de Proteção Ambiental da Várzea do Rio Tietê (APA), Área de Proteção aos Mananciais (APM) e demais áreas protegidas por legislações Estaduais e Federais.<!-- Permitido indústrias(1) em geral e corredor comercial (CC - Onde é permitido comercio em geral, exceto ZEIA 1), desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.--></span>`
 }//ZEIA
 
 //ZEII
@@ -1629,7 +1666,7 @@ function descrZeii(){
 }
 
 function zeii_IIIa(){
-    zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL (III-A)'
+    zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL'
     descrZeii()
     desd.innerHTML = `Desdobro mínimo permitido: <span class = "result">500m²</span>`
     tOcup.innerHTML = `Taxa de Ocupação: <span class = "result">70%</span>`
@@ -1639,7 +1676,7 @@ function zeii_IIIa(){
 }
 
 function zeii_IIIb(){
-    zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL (III-B)'
+    zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL'
     descrZeii()
     desd.style.display = 'none'
     tOcup.style.display = 'none'
