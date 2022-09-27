@@ -25,6 +25,7 @@ let recLateral = document.querySelector('#recLateral')
 let recFundos = document.querySelector('#recFundos')
 let janPav = document.querySelector('.janPav')
 let comEspecial = document.querySelector('#comEspecial')
+let proibComEspecial = document.querySelector('#proibComEspecial')
 let msgProibido = document.querySelector('#msgProibido')
 
 function msgErro(){
@@ -48,6 +49,8 @@ function semMsgErro(){
     mapa.style.boxShadow = '0px 0px 10px #046DB5'
     erro.style.display = 'none'
     comEspecial.style.display = 'none'
+    proibComEspecial.style.display = 'none'
+    msgProibido.style.display = 'none'
     descr.style.display = 'block'
     viab.style.display = 'block'
     indices.style.display = 'block'
@@ -491,11 +494,13 @@ function consultar(){
                 switch(quadra.value){
                     case '01':
                     case '03':
+                        zonaIIIa()
                         zeii_IIIa()
                         mapa.src = "image/43212/43212.xx/43212.23.jpg"
                         break
                     case '37':
                     case '45':
+                        zonaIIIa()
                         zeia4()
                         mapa.src = "image/43212/43212.xx/43212.23.jpg"
                         break
@@ -564,7 +569,11 @@ function consultar(){
                         mapa.src = "image/43212/43212.xx/43212.42.jpg"
                         break
                     case '70':
+                        zeii_IIIa()
+                        mapa.src = "image/43212/43212.xx/43212.42.jpg"
+                        break
                     case '74':
+                        zonaIIIa()
                         zeii_IIIa()
                         mapa.src = "image/43212/43212.xx/43212.42.jpg"
                         break
@@ -634,6 +643,7 @@ function consultar(){
                     case '56':
                     case '61':
                     case '87':
+                        zonaIIIa()
                         zeii_IIIa()
                         mapa.src = "image/43212/43212.xx/43212.44.jpg"
                         break
@@ -644,10 +654,12 @@ function consultar(){
             case '51':
                 switch(quadra.value){
                     case '05':
+                        zonaIIIa()
                         zeii_IIIa()
                         mapa.src = "image/43212/43212.xx/43212.51.jpg"
                         break
                     case '56':
+                        zonaIIIa()
                         zeia4()
                         mapa.src = "image/43212/43212.xx/43212.51.jpg"
                         break
@@ -656,6 +668,7 @@ function consultar(){
                 }
                 break
             case '52':
+                zonaIIIa()
                 zeia4()
                 mapa.src = "image/43212/43212.xx/43212.52.jpg"
                 break
@@ -665,6 +678,8 @@ function consultar(){
                     case '12':
                     case '21':
                     case '34':
+                        zonaIIIa()
+                        zeii_IIIa()
                         mapa.src = "image/43212/43212.xx/43212.53.jpg"
                         break
                     default:
@@ -672,6 +687,7 @@ function consultar(){
                 }
                 break
             case '54':
+                zonaIIIa()
                 zeia4()
                 mapa.src = "image/43212/43212.xx/43212.54.jpg"
                 break
@@ -1160,6 +1176,7 @@ function consultar(){
                 switch(quadra.value){
                     case '09':
                     case '46':
+                        zonaIIIa()
                         zeii_IIIa()
                         mapa.src = "image/43214/43214.xx/43214.21.jpg"
                         break
@@ -1177,6 +1194,7 @@ function consultar(){
                         mapa.src = "image/43214/43214.xx/43214.23.jpg"
                         break
                     case '45':
+                        zonaIIIa()
                         zeii_IIIa()
                         mapa.src = "image/43214/43214.xx/43214.23.jpg"
                         break
@@ -1234,6 +1252,7 @@ function consultar(){
                     case '03':
                     case '33':
                     case '93':
+                        zonaIIIb()
                         zeii_IIIb()
                         mapa.src = "image/43214/43214.xx/43214.42.jpg"
                         break
@@ -1259,6 +1278,7 @@ function consultar(){
             case '44':
                 switch(quadra.value){
                     case '58':
+                        zonaIIIb()
                         zeii_IIIb()
                         mapa.src = "image/43214/43214.xx/43214.44.jpg"
                         break
@@ -1282,6 +1302,7 @@ function consultar(){
                 }
                 break
             case '53':
+                zonaIIIb()
                 zeii_IIIb()
                 mapa.src = "image/43214/43214.xx/43214.53.jpg"
                 break
@@ -1676,13 +1697,14 @@ function zeii_IIIa(){
 }
 
 function zeii_IIIb(){
-    zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL'
-    descrZeii()
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
+    zeii_IIIa()
+    // zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL'
+    // descrZeii()
+    // desd.style.display = 'none'
+    // tOcup.style.display = 'none'
+    // caBasico.style.display = 'none'
+    // caMaximo.style.display = 'none'
+    // tPerm.style.display = 'none'
 }//ZEII
 
 //ZEIC
@@ -1773,12 +1795,15 @@ function zonaIIa(){
 
 function zonaIIb(){
     zonaIIa()
-    viab.innerHTML = `Viabilidade (Zona IIb): Permitido <span class = "destaque">RESIDÊNCIA UNIFAMILIAR</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
+    viab.innerHTML = `Viabilidade (Zona IIb): Permitido <span class = "destaque">residência unifamiliar</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
 }
 
 function zonaIIc(){
     zonaI()
-    comEspecial.innerHTML = `<span class = "resultRed">Não é permitido Comécio Especial no Local</span>`
+    if(tipoConstruc.value === 'Comercial'){
+        comEspecial.style.display = "none"
+        proibComEspecial.style.display = 'block'
+    }
     viab.innerHTML = `Viabilidade (Zona IIc): Permitido <span class = "destaque">residência unifamiliar, comércio de uso frequente e o de serviço</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
 }
 

@@ -149,11 +149,7 @@ aside .resultRed{
     float: left;
 }
 
-.recuos{
-    display: none;
-}
-
-#comEspecial{
+.recuos, #comEspecial, #proibComEspecial{
     display: none;
 }
 
