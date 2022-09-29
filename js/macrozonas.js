@@ -475,6 +475,9 @@ function consultar(){
                         mapa.src = "image/43212/43212.xx/43212.14.jpg"
                         break
                     case '67':
+                        zeia4()
+                        mapa.src = "image/43212/43212.xx/43212.14.jpg"
+                        break
                     case '87':
                         zonaIIIa()
                         zeia4()
@@ -1631,19 +1634,19 @@ function muc(){
 
 //ZEIA
 function descrZeia(){
-    descr.innerHTML = 'ZEIA - Áreas públicas ou privadas de interesse ambiental e paisagístico, necessárias à preservação e amenização do ambiente e aquelas destinadas a atividades esportivas, de lazer e ao turismo ambiental'
+    descr.innerHTML = 'ZEIA - Áreas públicas ou privadas de interesse ambiental e paisagístico, necessárias à preservação e amenização do ambiente e aquelas destinadas a atividades esportivas, de lazer e ao turismo ambiental.'
 }
 
 function zeia1(){
     zoneamento.style.backgroundColor = '#00b82e'
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE AMBIENTAL 1'
     descrZeia()
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Área destinada à proteção e recuperação dos recursos hídricos e seu entorno, com permissão de edificação unicamente para as finalidades de concessão da exploração das fontes e usos institucionais pertinentes ao lazer e turismo controlados, na forma que dispuser a lei municipal específica.</span>`
+    descr.innerHTML += `<br><span class = "destaque">ZEIA 1</span>: Área destinada à proteção e recuperação dos recursos hídricos e seu entorno, com permissão de edificação unicamente para as finalidades de concessão da exploração das fontes e usos institucionais pertinentes ao lazer e turismo controlados, na forma que dispuser a lei municipal específica.`
+    indices.style.display = 'none'
+    recuos.style.display = 'none'
+    viab.style.display = 'none'
+    msgProibido.style.display = 'block'
+    msgProibido.innerHTML = `<span class = "resultRed">Não é permitido nenhum tipo de construção no local, pois não há lei regulamentadora dos índices até a presente data.</span>`
 }
 
 function zeia2(){
@@ -1672,23 +1675,19 @@ function zeia4(){
     zoneamento.style.backgroundColor = '#bfff00'
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE AMBIENTAL 4'
     descrZeia()
+    descr.innerHTML += `<br><span class = "destaque">ZEIA 4</span>: Área de Proteção Ambiental da Várzea do Rio Tietê (APA), Área de Proteção aos Mananciais (APM) e demais áreas protegidas por legislações Estaduais e Federais.`
     desd.innerHTML = `Desdobro mínimo permitido: <span class = "result">500m²</span>`
     tOcup.innerHTML = `Taxa de Ocupação: <span class = "result">70%</span>`
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
     caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">2</span>`
     tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
-    // viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Área de Proteção Ambiental da Várzea do Rio Tietê (APA), Área de Proteção aos Mananciais (APM) e demais áreas protegidas por legislações Estaduais e Federais.<!-- Permitido indústrias(1) em geral e corredor comercial (CC - Onde é permitido comercio em geral, exceto ZEIA 1), desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.--></span>`
 }//ZEIA
 
 //ZEII
-function descrZeii(){
-    zoneamento.style.backgroundColor = '#bababa'
-    descr.innerHTML = 'ZEII - Áreas classificadas pela legislação municipal vigente como Zonas IIIA e IIIB e por legislação Estadual: ZUPI (Zona de Uso Predominantemente Industrial) e ZUC (Zona de Uso Controlado), exceto as porções territoriais destas sobrepostas pelo Cinturão Meândrico da Várzea do Rio Tietê.'
-}
-
 function zeii_IIIa(){
+    zoneamento.style.backgroundColor = '#bababa'
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL'
-    descrZeii()
+    descr.innerHTML = 'ZEII - Áreas classificadas pela legislação municipal vigente como Zonas IIIA e IIIB e por legislação Estadual: ZUPI (Zona de Uso Predominantemente Industrial) e ZUC (Zona de Uso Controlado), exceto as porções territoriais destas sobrepostas pelo Cinturão Meândrico da Várzea do Rio Tietê.'
     desd.innerHTML = `Desdobro mínimo permitido: <span class = "result">500m²</span>`
     tOcup.innerHTML = `Taxa de Ocupação: <span class = "result">70%</span>`
     caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
@@ -1698,98 +1697,66 @@ function zeii_IIIa(){
 
 function zeii_IIIb(){
     zeii_IIIa()
-    // zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE INDUSTRIAL'
-    // descrZeii()
-    // desd.style.display = 'none'
-    // tOcup.style.display = 'none'
-    // caBasico.style.display = 'none'
-    // caMaximo.style.display = 'none'
-    // tPerm.style.display = 'none'
 }//ZEII
 
 //ZEIC
 function zeic(){
+    muc()
     zoneamento.style.backgroundColor = '#7fffff'
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE COMERCIAL'
     descr.innerHTML = 'ZEIC - Porções territoriais nas quais predominam as atividades comerciais e de serviços ou aquelas com tendência e vocação à predominância das mesmas. São objetivos, o incentivo ao uso comercial e à requalificação de espaços e equipamentos públicos, na forma da lei municipal específica.'
-    desd.innerHTML = `Desdobro mínimo permitido: <span class = "result">125m²</span>`
-    tOcup.innerHTML = `Taxa de Ocupação: <span class = "result">75%</span>`
-    caBasico.innerHTML = `Coeficiente de aproveitamento BÁSICO: <span class = "result">1,4</span>`
-    caMaximo.innerHTML = `Coeficiente de aproveitamento MÁXIMO: <span class = "result">6</span>`
-    tPerm.innerHTML = `Taxa de Permeabilidade: <span class = "result">5%</span>`
 }//ZEIC
 
 //ZEIS
-function descrZeis(){
+function zeis1(){
+    muc()
+    zoneamento.style.backgroundColor = '#ffff00'
+    zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE SOCIAL 1'
     descr.innerHTML = 'ZEIS - Porções territoriais destinadas prioritariamente à regularização fundiária, urbanização e à produção de Habitação de Interesse Social (HIS) e Habitação de Mercado Popular (HMP).'
 }
 
-function zeis1(){
-    zoneamento.style.backgroundColor = '#ffff00'
-    zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE SOCIAL 1'
-    descrZeis()
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido... (Ver com a Val ou tirar foto de uma certidão).</span>`
-}
-
 function zeis2(){
+    zeis1()
     zoneamento.style.backgroundColor = '#ffbf00'
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE SOCIAL 2'
-    descrZeis()
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido... (Ver com a Val ou tirar foto de uma certidão).</span>`
 }
 
 function zeis3(){
+    zeis1()
     zoneamento.style.backgroundColor = '#ff7f00'
     zoneamento.innerHTML = 'ZONA ESPECIAL DE INTERESSE SOCIAL 3'
-    descrZeis()
-    desd.style.display = 'none'
-    tOcup.style.display = 'none'
-    caBasico.style.display = 'none'
-    caMaximo.style.display = 'none'
-    tPerm.style.display = 'none'
-    viab.innerHTML = `Viabilidade (Permissões): <span class = "result">Permitido... (Ver com a Val ou tirar foto de uma certidão).</span>`
 }//ZEIS
 
 //ZONAS
 function zonaI(){
-    viab.innerHTML = `Viabilidade (Zona I): Permitido <span class = "destaque">residência unifamiliar ou multifamiliar; comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
+    viab.innerHTML = `Viabilidade (Zona I): Permitido <span class = "destaque">residência unifamiliar ou multifamiliar, comércio de uso frequente, de serviço e o especial referente a indústria de pequeno porte não poluente</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
     tipConstr.innerHTML = `Tipo da Construção: <span class = "result">${tipoConstruc.value}</span>`
     recFrontal.innerHTML = `Frontal: <span class = "result">Mínimo 4,00 Metros</span>`
     recLateral.innerHTML = `Laterais: <span class = "result">0</span>`
     if(tipoConstruc.value === 'Comercial'){
         recFundos.innerHTML = `Fundos: <span class = "result">Mínimo 3,00 Metros</span>`
         comEspecial.style.display = "block"
+    }else if(tipoConstruc.value === 'Industrial'){
+        recuos.style.display = 'none'
+        msgProibido.style.display = 'block'
+        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido construção ${tipoConstruc.value} no local.</span>`
     }else{
         recFundos.innerHTML = `Fundos: <span class = "result">0</span>`
     }
 }
 
 function zonaIIa(){
-    viab.innerHTML = `Viabilidade (Zona IIa): Permitido <span class = "destaque">RESIDÊNCIA UNIFAMILIAR</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
+    viab.innerHTML = `Viabilidade (Zona IIa): Permitido <span class = "destaque">residência unifamiliar</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
     tipConstr.innerHTML = `Tipo da Construção: <span class = "result">${tipoConstruc.value}</span>`
-    if(tipoConstruc.value === 'Residencial'){
+    if(tipoConstruc.value === 'Residencial' || tipoConstruc.value === 'Turismo'){
         msgProibido.style.display = 'none'
         recFrontal.innerHTML = `Frontal: <span class = "result">Mínimo 6,00 Metros</span>`
         recLateral.innerHTML = `Laterais: <span class = "result">Mínimo 1,50 Metro</span>`
         recFundos.innerHTML = `Fundos: <span class = "result">Mínimo 3,00 Metros</span>`
-    }else if(tipoConstruc.value === 'Turismo'){
-        recuos.style.display = 'none'
-        msgProibido.style.display = 'block'
-        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido ${tipoConstruc.value} no local</span>`
     }else{
         recuos.style.display = 'none'
         msgProibido.style.display = 'block'
-        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido Construção ${tipoConstruc.value} no local</span>`
+        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido Construção ${tipoConstruc.value} no local.</span>`
     }
 }
 
@@ -1808,27 +1775,28 @@ function zonaIIc(){
 }
 
 function zonaIIIa(){
-    viab.innerHTML = `Viabilidade (Zona IIIa): Permitido <span class = "destaque">indústrias</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.`
+    viab.innerHTML = `Viabilidade (Zona IIIa): Permitido <span class = "destaque">indústrias</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
     tipConstr.innerHTML = `Tipo da Construção: <span class = "result">${tipoConstruc.value}</span>`
-    if(tipoConstruc.value === 'Industrial'){
+    if(tipoConstruc.value === 'Industrial' || tipoConstruc.value === 'Turismo'){
         msgProibido.style.display = 'none'
+        recuos.style.display = 'block'
         recFrontal.innerHTML = `Frontal: <span class = "result">Mínimo 10,00 Metros</span>`
         recLateral.innerHTML = `Laterais: <span class = "result">Mínimo 3,00 Metros</span>`
         recFundos.innerHTML = `Fundos: <span class = "result">Mínimo 5,00 Metros</span>`
-    }else if(tipoConstruc.value === 'Residencial' || tipoConstruc.value === 'Turismo'){
+    }else if(tipoConstruc.value === 'Residencial'){
         recuos.style.display = 'none'
         msgProibido.style.display = 'block'
-        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido ${tipoConstruc.value} no local</span>`
+        msgProibido.innerHTML = `<span class = "resultRed">Não é permitido construção ${tipoConstruc.value} no local.</span>`
     }else{
         recuos.style.display = 'none'
         msgProibido.style.display = 'block'
-        msgProibido.innerHTML = `<span class = "resultRed"> Construção ${tipoConstruc.value} (CS/CF/CE) é permitido somente nas vias que são Corredores Comerciais, não necessitanto de recuos</span>`
+        msgProibido.innerHTML = `<span class = "resultRed"> Construção ${tipoConstruc.value} (CS/CF/CE) é permitido somente nas vias que são Corredores Comerciais, não necessitanto de recuos.</span>`
     }
 }
 
 function zonaIIIb(){
     zonaIIIa()
-    viab.innerHTML = `Viabilidade (Zona IIIb): Permitido <span class = "destaque">indústrias</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros supracitados.`
+    viab.innerHTML = `Viabilidade (Zona IIIb): Permitido <span class = "destaque">indústrias</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
 }
 // //ZONAS
 
