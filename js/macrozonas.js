@@ -18,7 +18,7 @@ let indices = document.querySelector('.indices')
 let viab = document.querySelector('#viab')
 let recuos = document.querySelector('.recuos')
 let tipoConstruc = document.querySelector('#tipoConstruc')
-let risco = document.querySelector('.risco')
+let risco = document.querySelector('#risco')
 let tipConstr = document.querySelector('#tipConstr')
 let recFrontal = document.querySelector('#recFrontal')
 let recLateral = document.querySelector('#recLateral')
@@ -55,6 +55,7 @@ function semMsgErro(){
     viab.style.display = 'block'
     indices.style.display = 'block'
     recuos.style.display = 'block'
+    risco.style.display = 'none'
 }
 
 function consultar(){
@@ -115,8 +116,11 @@ function consultar(){
                 break
             case '34':
                 switch(quadra.value){
-                    case '04':
                     case '35':
+                        riscoBaixo(risco.innerHTML = 'POSSÍVEL ÁREA DE RISCO - NÍVEL BAIXO A2/S1/R1')
+                        mapa.src = "image/43211/43211.xx/43211.34.jpg"
+                        break
+                    case '04':
                     case '61':
                     case '73':
                     case '74':
@@ -459,11 +463,14 @@ function consultar(){
             case '14':
                 switch(quadra.value){
                     case '04':
+                    case '36':
+                        riscoBaixo(risco.innerHTML = 'POSSÍVEL ÁREA DE RISCO - NÍVEL BAIXO A1/S1/R1')
+                        mapa.src = "image/43212/43212.xx/43212.14.jpg"
+                        break
                     case '12':
                     case '26':
                     case '31':
                     case '33':
-                    case '36':
                     case '46':
                     case '50':
                     case '54':
@@ -808,10 +815,13 @@ function consultar(){
                 break
             case '31':
                 switch(quadra.value){
+                    case '90':
+                        riscoBaixo(risco.innerHTML = 'POSSÍVEL ÁREA DE RISCO - NÍVEL BAIXO A6/S4/R1')
+                        mapa.src = "image/43213/43213.xx/43213.31.jpg"
+                        break
                     case '72':
                     case '73':
                     case '76':
-                    case '90':
                     case '94':
                         mapa.src = "image/43213/43213.xx/43213.31.jpg"
                         break
@@ -1797,9 +1807,25 @@ function zonaIIIa(){
 function zonaIIIb(){
     zonaIIIa()
     viab.innerHTML = `Viabilidade (Zona IIIb): Permitido <span class = "destaque">indústrias</span>, desde que seja atendida a legislação de âmbito Federal, Estadual e Municipal pertinentes ao <em>Uso e Ocupação do Solo</em> conforme os parâmetros abaixo.`
+}//ZONAS
+
+//ÁREAS DE RISCO
+function riscoBaixo(){
+    risco.style.display = 'block'
+    risco.style.backgroundColor = '#37DD00'
 }
-// //ZONAS
 
+function riscoMedio(){
+    risco.style.display = 'block'
+    risco.style.backgroundColor = '#FFFF00'
+}
 
-//ÁREAS DE RISCO
-//ÁREAS DE RISCO
+function riscoAlto(){
+    risco.style.display = 'block'
+    risco.style.backgroundColor = '#FF0000'
+}
+
+function riscoMuitoAlto(){
+    risco.style.display = 'block'
+    risco.style.backgroundColor = '#DD00DD'
+}//ÁREAS DE RISCO

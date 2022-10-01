@@ -160,10 +160,16 @@ aside .resultRed{
     color: #046DB5;
 }
 
-.risco{
+#risco{
     position: relative;
-    width: 100%;
-    height: auto;
+    width: 90%;
+    margin:20px auto;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 5px #000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px #000;
     display: none;
 }
 
