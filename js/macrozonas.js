@@ -18,7 +18,6 @@ let indices = document.querySelector('.indices')
 let viab = document.querySelector('#viab')
 let recuos = document.querySelector('.recuos')
 let tipoConstruc = document.querySelector('#tipoConstruc')
-let risco = document.querySelector('#risco')
 let tipConstr = document.querySelector('#tipConstr')
 let recFrontal = document.querySelector('#recFrontal')
 let recLateral = document.querySelector('#recLateral')
@@ -27,6 +26,8 @@ let janPav = document.querySelector('.janPav')
 let comEspecial = document.querySelector('#comEspecial')
 let proibComEspecial = document.querySelector('#proibComEspecial')
 let msgProibido = document.querySelector('#msgProibido')
+let risco = document.querySelector('.risco')
+let nivelRisco = document.querySelector('#nivelRisco')
 
 function msgErro(){
     classCheck.style.display = 'none'
@@ -117,14 +118,17 @@ function consultar(){
             case '34':
                 switch(quadra.value){
                     case '35':
-                        riscoBaixo(risco.innerHTML = 'POSSÍVEL ÁREA DE RISCO - NÍVEL BAIXO A2/S1/R1')
+                        riscoBaixo(nivelRisco.innerHTML = 'NÍVEL BAIXO A2/S1/R1')
+                        mapa.src = "image/43211/43211.xx/43211.34.jpg"
+                        break
+                    case '75':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A2/S2/R2')
                         mapa.src = "image/43211/43211.xx/43211.34.jpg"
                         break
                     case '04':
                     case '61':
                     case '73':
                     case '74':
-                    case '75':
                     case '82':
                         mapa.src = "image/43211/43211.xx/43211.34.jpg"
                         break
@@ -464,7 +468,7 @@ function consultar(){
                 switch(quadra.value){
                     case '04':
                     case '36':
-                        riscoBaixo(risco.innerHTML = 'POSSÍVEL ÁREA DE RISCO - NÍVEL BAIXO A1/S1/R1')
+                        riscoBaixo(nivelRisco.innerHTML = 'NÍVEL BAIXO A1/S1/R1')
                         mapa.src = "image/43212/43212.xx/43212.14.jpg"
                         break
                     case '12':
@@ -600,29 +604,40 @@ function consultar(){
                     case '95':
                         mapa.src = "image/43212/43212.xx/43212.43.jpg"
                         break
-                    case '03':
                     case '29':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A4/S1/R2')
+                        mapa.src = "image/43212/43212.xx/43212.43.jpg"
+                        break
+                    case '03':
                         zeia3()
+                        mapa.src = "image/43212/43212.xx/43212.43.jpg"
+                        break
+                    case '35':
+                    case '36':
+                    case '47':
+                    case '49':
+                    case '55':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A4/S1/R2')
+                        zeic()
+                        mapa.src = "image/43212/43212.xx/43212.43.jpg"
+                        break
+                    case '72':
+                    case '82':
+                    case '90':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A5/S1/R2')
+                        zeic()
                         mapa.src = "image/43212/43212.xx/43212.43.jpg"
                         break
                     case '00':
                     case '21':
                     case '22':
                     case '33':
-                    case '35':
-                    case '36':
                     case '40':
                     case '42':
                     case '44':
-                    case '47':
-                    case '49':
-                    case '55':
                     case '61':
-                    case '72':
                     case '73':
-                    case '82':
                     case '84':
-                    case '90':
                         zeic()
                         mapa.src = "image/43212/43212.xx/43212.43.jpg"
                         break
@@ -816,7 +831,7 @@ function consultar(){
             case '31':
                 switch(quadra.value){
                     case '90':
-                        riscoBaixo(risco.innerHTML = 'POSSÍVEL ÁREA DE RISCO - NÍVEL BAIXO A6/S4/R1')
+                        riscoBaixo(nivelRisco.innerHTML = 'NÍVEL BAIXO A6/S4/R1')
                         mapa.src = "image/43213/43213.xx/43213.31.jpg"
                         break
                     case '72':
@@ -830,13 +845,17 @@ function consultar(){
                         zeia1()
                         mapa.src = "image/43213/43213.xx/43213.31.jpg"
                         break
+                    case '41':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A6/S3/R2')
+                        zeia2()
+                        mapa.src = "image/43213/43213.xx/43213.31.jpg"
+                        break
                     case '15':
                     case '21':
                     case '22':
                     case '23':
                     case '24':
                     case '36':
-                    case '41':
                     case '46':
                     case '48':
                         zeia2()
@@ -848,6 +867,10 @@ function consultar(){
                 break
             case '32':
                 switch(quadra.value){
+                    case '66':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A19/S1/R2')
+                        mapa.src = "image/43213/43213.xx/43213.32.jpg"
+                        break
                     case '03':
                     case '16':
                     case '25':
@@ -855,7 +878,6 @@ function consultar(){
                     case '34':
                     case '47':
                     case '53':
-                    case '65':
                     case '73':
                         mapa.src = "image/43213/43213.xx/43213.32.jpg"
                         break
@@ -880,8 +902,11 @@ function consultar(){
                 break
             case '33':
                 switch(quadra.value){
-                    case '14':
                     case '22':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A8/S1/R2')
+                        mapa.src = "image/43213/43213.xx/43213.33.jpg"
+                        break
+                    case '14':
                     case '51':
                     case '55':
                     case '66':
@@ -1051,6 +1076,7 @@ function consultar(){
                         mapa.src = "image/43213/43213.xx/43213.64.jpg"
                         break
                     case '80':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A10/S1/R2')
                         mapa.src = "image/43213/43213.xx/43213.64.80.jpg"
                         break
                     default:
@@ -1075,6 +1101,11 @@ function consultar(){
                     case '97':
                         mapa.src = "image/43214/43214.xx/43214.11.jpg"
                         break
+                    case '69':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A5/S1/R2')
+                        zeic()
+                        mapa.src = "image/43214/43214.xx/43214.11.jpg"
+                        break
                     case '00':
                     case '02':
                     case '03':
@@ -1091,7 +1122,6 @@ function consultar(){
                     case '47':
                     case '55':
                     case '66':
-                    case '69':
                     case '77':
                         zeic()
                         mapa.src = "image/43214/43214.xx/43214.11.jpg"
@@ -1301,12 +1331,15 @@ function consultar(){
                 break
             case '51':
                 switch(quadra.value){
+                    case '35':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A9/S1/R2')
+                        mapa.src = "image/43214/43214.xx/43214.51.jpg"
+                        break
                     case '03':
                     case '17':
                     case '18':
                     case '19':
                     case '25':
-                    case '35':
                     case '38':
                         mapa.src = "image/43214/43214.xx/43214.51.jpg"
                         break
@@ -1465,16 +1498,20 @@ function consultar(){
                 break
             case '61':
                 switch(quadra.value){
+                    case '71':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A15/S1/R2')
+                        mapa.src = "image/43231/43231.xx/43231.61.jpg"
+                        break
                     case '08':
                     case '18':
                     case '38':
                     case '39':
-                    case '71':
                     case '82':
                     case '94':
                         mapa.src = "image/43231/43231.xx/43231.61.jpg"
                         break
                     case '91':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A15/S1/R2')
                         mapa.src = "image/43231/43231.xx/43231.61.91.jpg"
                         break
                     case '50':
@@ -1488,13 +1525,16 @@ function consultar(){
                 break
             case '62':
                 switch(quadra.value){
+                    case '26':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A14/S1/R2')
+                        mapa.src = "image/43231/43231.xx/43231.62.jpg"
+                        break
                     case '03':
                     case '07':
                     case '12':
                     case '15':
                     case '22':
                     case '24':
-                    case '26':
                     case '31':
                     case '34':
                     case '36':
@@ -1579,13 +1619,16 @@ function consultar(){
                 break
             case '13':
                 switch(quadra.value){
+                    case '25':
+                        riscoMedio(nivelRisco.innerHTML = 'NÍVEL MÉDIO A13/S1/R2')
+                        mapa.src = "image/43232/43232.xx/43232.13.jpg"
+                        break
                     case '08':
                     case '10':
                     case '13':
                     case '16':
                     case '20':
                     case '23':
-                    case '25':
                         mapa.src = "image/43232/43232.xx/43232.13.jpg"
                         break
                     case '44':
