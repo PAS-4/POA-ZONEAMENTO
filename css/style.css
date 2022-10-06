@@ -217,4 +217,10 @@ aside .resultRed{
     aside .result{
         font-size: 20pt;
     }
+    
+    .indices, .recuos, .msgProibido{
+        position: relative;
+        width: 100%;
+        float: none;
+    }
 }
