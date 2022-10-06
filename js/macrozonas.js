@@ -57,6 +57,7 @@ function semMsgErro(){
     indices.style.display = 'block'
     recuos.style.display = 'block'
     risco.style.display = 'none'
+    risco.style.backgroundImage = 'none'
 }
 
 function consultar(){
